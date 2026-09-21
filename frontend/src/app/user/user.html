@@ -1,0 +1,79 @@
+<!-- 🌈 BACKGROUND WRAPPER -->
+<div class="app-container">
+
+  <!-- 🔔 TOAST -->
+  <div *ngIf="message" class="toast">
+    {{message}}
+  </div>
+
+  <!-- 🧠 HEADER -->
+  <div class="header">
+    <h1>👥 USER DIRECTORY</h1>
+     
+  </div>
+
+  <!-- 🔍 TOP CONTROL PANEL -->
+  <div class="top-card">
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <span>🔍</span>
+      <input
+        type="text"
+        [(ngModel)]="searchText"
+        (ngModelChange)="currentPage = 1"
+        placeholder="Search Users..."
+      />
+    </div>
+
+    <!-- FORM -->
+    <form (submit)="addUser(); $event.preventDefault()" class="form-grid">
+
+      <input type="text" [(ngModel)]="name" name="name" placeholder="Name" required>
+      <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+
+      <!-- Upload -->
+      <label class="upload-box">
+        ☁ Upload Photo
+        <input type="file" (change)="onFileChange($event)" hidden>
+      </label>
+
+      <button type="submit" class="primary-btn">
+        {{ selectedUser ? 'Update User' : 'Add User' }}
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- 🧑‍💻 CARD GRID -->
+  <div class="card-grid">
+    <div class="user-card" *ngFor="let user of paginatedUsers()">
+
+      <img *ngIf="user.image"
+        [src]="'http://127.0.0.1:8000/storage/' + user.image"
+        class="avatar"
+      >
+
+      <h3>{{user.name}}</h3>
+      <p>{{user.email}}</p>
+
+      <!-- 👇 HIDDEN ACTIONS -->
+      <div class="actions">
+        <button (click)="editUser(user)">✏️</button>
+        <button (click)="deleteUser(user.id)">🗑️</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 📄 PAGINATION -->
+  <div class="pagination-wrapper">
+    <div class="pagination">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Prev</button>
+      <span>Page {{currentPage}}</span>
+      <button (click)="nextPage()">Next</button>
+    </div>
+  </div>
+
+</div>

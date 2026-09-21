@@ -1,0 +1,358 @@
+/* 🌟 HEADER */
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.header p {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* 🌈 BACKGROUND */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0f2fe, #ede9fe);
+  margin: 0;
+  padding: 20px;
+}
+
+/* 🔔 TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #22c55e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  z-index: 9999; /* 🔥 VERY IMPORTANT */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* 🔍 TOP CARD */
+.top-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.form-grid input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* UPLOAD */
+.upload-box {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.primary-btn {
+  background: #8549ee;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #6d28d9;
+}
+
+/* 🧑‍💻 CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* 🧾 USER CARD */
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 👤 AVATAR */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  margin: 0 5px;
+  border: none;
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 📄 PAGINATION WRAPPER */
+.pagination-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 📄 PAGINATION BOX */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* BUTTON STYLE */
+.pagination button {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+.pagination button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(99, 102, 241, 0.4);
+}
+
+/* PAGE TEXT */
+.pagination span {
+  font-weight: 600;
+  color: #334155;
+}
+/* 🌈 BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e9d5ff, #d1fae5);
+}
+
+/* CONTAINER */
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.header p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* 🔔 TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #22c55e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  z-index: 9999; /* 🔥 VERY IMPORTANT */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* 🧊 GLASS BAR */
+.glass-bar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* INPUTS */
+.glass-bar input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* FORM */
+.form-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* BUTTON */
+.form-inline button {
+  background: linear-gradient(to right, #7c3aed, #6366f1);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-inline button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+/* GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.user-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* AVATAR */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a78bfa;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.user-card h3 {
+  color: #1e293b;
+}
+
+.user-card p {
+  color: #64748b;
+}
+
+/* ACTIONS (HIDDEN UNTIL HOVER) */
+.actions {
+  opacity: 0;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.user-card:hover .actions {
+  opacity: 1;
+}
+
+/* ACTION BUTTONS */
+.actions button {
+  border: none;
+  background: #f1f5f9;
+  margin: 0 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PAGINATION */
+.pagination-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 15px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pagination button {
+  background: linear-gradient(to right, #7c3aed, #6366f1);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #cbd5f5;
+  cursor: not-allowed;
+}
+
